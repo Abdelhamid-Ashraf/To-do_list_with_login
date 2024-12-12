@@ -1,0 +1,281 @@
+/** Start Global Style  */
+@font-face {
+  font-family: "Righteous";
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-text-color: #53a69c;
+  --main-bg-color: #b2a9912a;
+  --sub-bg-color: #b2a991;
+  --hov-bg-color: #856b22a9;
+  --hov-text-color: #d0c5a7;
+}
+
+body {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
+    url(../dark-gray-wall-with-wooden-plank-product-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Righteous";
+}
+/** End Global Style  */
+
+.container .login-title {
+  padding-block: 70px;
+  margin-top: 30px;
+  color: var(--sub-bg-color);
+  width: 75%;
+  text-align: center;
+}
+.container .login-title h1 {
+  font-size: 70px;
+}
+
+section .container .login-body,
+section .container .signup-body {
+  margin-top: 20px;
+  padding: 50px;
+
+  border: 1px solid var(--main-bg-color);
+  box-shadow: var(--hov-bg-color) 0 0 5px 3px;
+  box-sizing: border-box;
+}
+section .container .login-body .title,
+section .container .signup-body .title {
+  color: var(--main-text-color);
+}
+
+section .container .login-body .input input,
+section .container .signup-body .input input {
+  background-color: var(--main-bg-color);
+  color: var(--sub-bg-color);
+  border: 1px solid var(--sub-bg-color);
+  padding: 10px 15px;
+  margin-block: 25px;
+  transition: background-color 0.2s ease-in-out;
+}
+section .container .login-body .input input:hover,
+section .container .signup-body .input input:hover {
+  background-color: var(--hov-bg-color);
+}
+section .container .login-body .input input::placeholder,
+section .container .signup-body .input input::placeholder {
+  color: #b1b1b1;
+}
+section .container .login-body .input input:focus,
+section .container .signup-body .input input:focus {
+  box-shadow: none;
+}
+
+section .container .login-body .my-btn,
+section .container .signup-body .my-btn {
+  width: 100%;
+  border: 1px solid var(--sub-bg-color);
+  border-radius: 5px;
+  text-align: center;
+  margin-block: 30px;
+  background-color: var(--main-bg-color);
+  transition: background-color 0.3s ease-in-out;
+}
+section .container .login-body .my-btn:hover,
+section .container .signup-body .my-btn:hover {
+  background-color: var(--hov-bg-color);
+}
+
+section .container .login-body .my-btn,
+section .container .signup-body .my-btn{
+  color: var(--main-text-color);
+  padding-block: 10px;
+}
+
+section .container .login-body .signup-btn p,
+section .container .signup-body .login-btn p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #98dea3;
+}
+section .container .login-body .signup-btn a,
+section .container .signup-body .login-btn a {
+  text-decoration: none;
+  color: #98dea3;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+section .container .login-body .signup-btn a:hover,
+section .container .signup-body .login-btn a:hover {
+  color: #98dea398;
+}
+
+/* ! todo style */
+/** Start ProgressBar Style  */
+.top-title{
+color: var(--sub-bg-color);
+margin-block: 30px;
+}
+
+.top-title .op-btns .my-btn{
+  background-color: var(--main-bg-color);
+  color: var(--sub-bg-color);
+  padding: 10px 20px;
+  transition: all 0.5s;
+  margin-inline: 15px;
+}
+.top-title .op-btns .my-btn:hover{
+  background-color: var(--hov-bg-color);
+  color: var(--hov-text-color);
+}
+.status-todo {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+#progressBar {
+  height: 10px;
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#progress {
+  height: inherit;
+  background-color: var(--sub-bg-color);
+  width: 0%;
+  transition: width 0.7s;
+}
+
+.status-nums {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--sub-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 600;
+}
+/** End ProgressBar Style  */
+
+/** Start Form Style  */
+.my-input {
+  padding: 10px 15px;
+  font-size: 18px;
+}
+.my-input:focus {
+  box-shadow: 0 0 0 4px var(--sub-bg-color);
+}
+.add-btn {
+  background-color: var(--main-bg-color);
+  color: var(--sub-bg-color);
+  padding: 10px 50px;
+  transition: all 0.5s;
+}
+.add-btn:hover {
+  background-color: var(--hov-bg-color);
+  color: var(--hov-text-color);
+}
+/** End Form Style  */
+
+/** Start List Style  */
+.task-list .my-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dc965d;
+  padding: 12px;
+  margin-block: 12px;
+  background-color: #615b4b2a;
+  border-radius: 10px;
+}
+
+.delete-icon {
+  color: #d01820;
+}
+
+.task-list .icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.task-list .task-name {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--sub-bg-color);
+}
+
+.task-list .task-name::after {
+  content: "click to complete";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 5px;
+  pointer-events: none;
+  text-wrap: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.task-list .task-name:hover::after {
+  opacity: 1;
+}
+/** End List Style  */
+
+/** Start LoadingScreen Style  */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/** End LoadingScreen Style  */

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do Sign up</title>
+
+    <link rel="icon" href="../favicon_io/favicon (2).ico" type="image/png" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="d-flex justify-content-center">
+      <div class="container d-flex flex-wrap justify-content-center align-items-center ">
+        <div class="login-title ">
+          <h1>Personal to-do list </h1>
+          <span>organize your day ;)</span>
+        </div>
+        <div class="signup-body text-center">
+          <div class="title mb-5  ">
+            <h2>Signup</h2>
+          </div>
+
+          <form class="input my-5">
+            <input
+              type="text"
+              id="signupName"
+              class="form-control"
+              placeholder="Enter your name"
+            />
+
+            <p
+              id="msgName"
+              class="alert alert-danger p-1 small w-75 mx-auto d-none"
+            >
+              Name is required
+            </p>
+            <input
+              type="email"
+              id="signupEmail"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <p
+              id="msgEmail"
+              class="alert alert-danger p-1 small w-75 mx-auto d-none"
+            >
+              Email is required
+            </p>
+            <input
+              type="password"
+              id="signupPassword"
+              class="form-control"
+              placeholder="Enter your password"
+            />
+            <p
+              id="msgPass"
+              class="alert alert-danger p-1 small w-50 mx-auto d-none"
+            >
+              Password min 8 must contain at least one A-Z,a-z,0-9 and &*@ or
+              space
+            </p>
+            <p
+              id="msgExists"
+              class="alert alert-danger p-1 small w-50 mx-auto d-none"
+            >
+              Email already exists
+            </p>
+
+            <button id="signupBtn" class="btn my-btn">signup</button>
+          </form>
+
+          <div class="login-btn d-flex justify-content-evenly">
+            <p>You have an account?</p>
+            <a href="../index.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>

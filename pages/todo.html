@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/auth.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do Home</title>
+
+    <link rel="icon" href="../favicon_io/favicon (2).ico" type="image/ico">
+    <!--& SweetAlert2 CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <!--& Font awesome CSS -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!--& Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!--& Main CSS  -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!--& Toastr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+  </head>
+  <body>
+    <div class=" top-title d-flex align-items-center justify-content-evenly ">
+      <div class="wel-msg"></div>
+      <div class="op-btns ">
+        <button id="logoutBtn" class="btn my-btn">Logout</button>
+        <button id="delAcc" class="btn my-btn">Delete</button>
+      </div>
+      
+
+    </div>
+    <section>
+      <div class="container w-50 mx-auto  rounded-2 py-3">
+        <div class="status-todo  mb-5 p-3 rounded-2 d-flex justify-content-between align-items-center">
+          <div class="flex-grow-1">
+            <h1 class="h3">Todoist</h1>
+            <span >keep it up</span>
+
+            <div id="progressBar">
+              <div id="progress"></div>
+            </div>
+          </div>
+
+          <div class="status-nums"><span>0</span> / <span>0</span></div>
+        </div>
+
+        <form class="mt-4 py-4 d-flex gap-5 align-items-center">
+            <input
+              type="text"
+              id="addTodo"
+              class="form-control my-input"
+              placeholder="Things to do...."
+            />
+            <button
+              type="submit"
+              id="addBtn"
+              class="btn add-btn "
+            >
+              Add
+            </button>
+          </form>
+       
+      </div>
+
+      <div class="container w-50 mx-auto rounded-2 mt-5">
+        <ul class="p-3 task-list  text-white"></ul>
+      </div>
+    </section>
+
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <!--& Jquery JS  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--& SweetAlert2 JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <!--& Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!--& Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--& Main JS  -->
+    <script src="../js/todo.js"></script>
+  </body>
+</html>
